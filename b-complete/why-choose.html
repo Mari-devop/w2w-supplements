@@ -23,7 +23,7 @@
                 </p>
             </div>
             <div class="choose-content__container-item" data-id="2">
-                <img src="./assets/why-choose/img-2.webp" alt="why-choose-1" class="choose-content__container-img">
+                <img src="./assets/why-choose/img-2.webp" alt="why-choose-1" class="choose-content__container-img choose-content__img">
                 <p class="choose-content__container-item-text">
                     Supports Brain Health*
                 </p>
@@ -169,10 +169,16 @@
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
-            align-items: center;
+            align-items: flex-start;
             gap: 20px;
+            width: 100%;
         }
         
+        .choose-content__img {
+            width: 80px;
+            height: 80px;
+        }
+
         @media screen and (max-width: 1710px) {
             .choose-content__container-item-hover {
                 width: 250px;
