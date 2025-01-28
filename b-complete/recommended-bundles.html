@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="recommend-content">
+        <h2 class="recommend-content__title">recommended bundles</h2>
+        <div class="recommend-content__container" id="recommendContainer">
+            <div class="recommend-content__item">
+                <div class="recommend-content__img-container">
+                    <img src="./assets/recommended-bundles/img-1.webp" alt="bundle" class="recommend-content__item-img">
+                </div>
+                <div class="recommend-content__text-container">
+                    <p class="recommend-content__text-container-title">B Complete</p>
+                    <p class="recommend-content__text-container-subtitle">Supplements, Energy & Vitality</p>
+                    <p class="recommend-content__text-container-price">$34.00</p>
+                </div>
+            </div>
+            <div class="recommend-content__item">
+                <div class="recommend-content__img-container">
+                    <img src="./assets/recommended-bundles/img-2.webp" alt="bundle" class="recommend-content__item-img">
+                </div>
+                <div class="recommend-content__text-container">
+                    <p class="recommend-content__text-container-title">Milk Thistle</p>
+                    <p class="recommend-content__text-container-subtitle">Supplements, Immune & Detox</p>
+                    <p class="recommend-content__text-container-price">$32.00</p>
+                </div>
+            </div>
+            <div class="recommend-content__item">
+                <div class="recommend-content__img-container">
+                    <img src="./assets/recommended-bundles/img-3.webp" alt="bundle" class="recommend-content__item-img">
+                </div>
+                <div class="recommend-content__text-container">
+                    <p class="recommend-content__text-container-title">Vitamin D3 + K2 5000</p>
+                    <p class="recommend-content__text-container-subtitle">Supplements, Immune & Detox</p>
+                    <p class="recommend-content__text-container-price">$32.00</p>
+                </div>
+            </div>
+            <div class="recommend-content__item">
+                <div class="recommend-content__img-container">
+                    <img src="./assets/recommended-bundles/img-4.webp" alt="bundle" class="recommend-content__item-img">
+                </div>
+                <div class="recommend-content__text-container">
+                    <p class="recommend-content__text-container-title">Glutathione</p>
+                    <p class="recommend-content__text-container-subtitle">Supplements, Immune & Detox</p>
+                    <p class="recommend-content__text-container-price">$44.00</p>
+                </div>
+            </div>
+        </div>
+        <button class="recommend-content__btn" id="toggleButton">See more</button>
+    </section>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1B1D29;
+            font-family: "Roboto";
+        }
+
+        .recommend-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 23.016px 116px 22.094px 117px;
+            margin-top: 200px;
+            margin-bottom: 200px;
+        }
+
+        .recommend-content__title {
+            color: #34B4F4;
+            font-family: "Roboto";
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 1000;
+            line-height: 35.2px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 42px;
+            font-variation-settings: "wdth" 114, "XTRA" 600, "XOPQ" 96, "YOPQ" 79, "YTLC" 530, "YTUC" 690, "YTAS" 740, "YTDE" -180, "YTFI" 738 !important;
+        }
+
+        .recommend-content__container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 19px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        .recommend-content__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            background: #0D0F15;
+            max-width: 406.66px;
+            height: 504.89px;
+            border-radius: 12px;
+            box-sizing: border-box;
+            transition: all 0.3s;
+        }
+
+        .recommend-content__img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 406.66px;
+            height: 406.66px;
+        }
+
+        .recommend-content__item-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .recommend-content__text-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 11px 15px;
+            box-sizing: border-box;
+        }
+
+        .recommend-content__text-container-title {
+            color: #FFF;
+            font-family: "Roboto";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 1000;
+            line-height: 15.4px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 7px;
+            margin-top: 0;
+        }
+
+        .recommend-content__text-container-subtitle {
+            color: #A5A5A5;
+            font-family: "Roboto";
+            font-size: 15.2px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21.28px;
+            margin-bottom: 12px;
+            margin-top: 0;
+        }
+
+        .recommend-content__text-container-price {
+            color: #34B4F4;
+            font-family: "Roboto";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 22.4px;
+            margin-top: 0;
+        }
+
+        .recommend-content__btn {
+            margin-top: 32px;
+            margin-right: 19px;
+            margin-left: auto;
+            display: flex;
+            padding: 13px 60px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 35px;
+            background: #34B4F4;
+            color: #26355E;
+            text-align: center;
+            font-family: "Roboto";
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 1000;
+            line-height: 14.3px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media (max-width: 1500px) {
+            .recommend-content {
+                padding: 23.016px 60px 22.094px 61px;
+            }
+        }
+
+        @media (max-width: 1300px) {
+            .recommend-content {
+                padding: 23.016px 15px 22.094px 15px;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .recommend-content__container {
+                grid-template-columns: repeat(2, 1fr);
+                justify-items: center;
+            }
+
+            .recommend-content__text-container-title {
+                margin-bottom: 5px;
+            }
+
+            .recommend-content__text-container-subtitle {
+                font-size: 13.7px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 19.15px;
+                margin-bottom: 10px;
+            }
+
+            .recommend-content__text-container-price {
+                font-size: 14.4px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 20.16px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .recommend-content__img-container {
+                width: 100%;
+                height: auto;
+            }
+
+            .recommend-content__container {
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            .recommend-content__item {
+                height: auto;
+            }
+
+            .recommend-content__btn {
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const recommendContainer = document.getElementById("recommendContainer");
+            const toggleButton = document.getElementById("toggleButton");
+            const allItems = [
+                `<div class="recommend-content__item">
+                    <div class="recommend-content__img-container">
+                        <img src="./assets/recommended-bundles/img-5.webp" alt="bundle" class="recommend-content__item-img">
+                    </div>
+                    <div class="recommend-content__text-container">
+                        <p class="recommend-content__text-container-title">Berberine 500</p>
+                        <p class="recommend-content__text-container-subtitle">Supplements, Gut & Metabolism</p>
+                        <p class="recommend-content__text-container-price">$48.00</p>
+                    </div>
+                </div>`,
+                `<div class="recommend-content__item">
+                    <div class="recommend-content__img-container">
+                        <img src="./assets/recommended-bundles/img-6.webp" alt="bundle" class="recommend-content__item-img">
+                    </div>
+                    <div class="recommend-content__text-container">
+                        <p class="recommend-content__text-container-title">DHEA + Pregnenolone</p>
+                        <p class="recommend-content__text-container-subtitle">Supplements, Hormone Support</p>
+                        <p class="recommend-content__text-container-price">$34.00</p>
+                    </div>
+                </div>`,
+                `<div class="recommend-content__item">
+                    <div class="recommend-content__img-container">
+                        <img src="./assets/recommended-bundles/img-7.webp" alt="bundle" class="recommend-content__item-img">
+                    </div>
+                    <div class="recommend-content__text-container">
+                        <p class="recommend-content__text-container-title">DHEA 25</p>
+                        <p class="recommend-content__text-container-subtitle">Supplements, Hormone Support</p>
+                        <p class="recommend-content__text-container-price">$26.00</p>
+                    </div>
+                </div>`,
+                `<div class="recommend-content__item">
+                    <div class="recommend-content__img-container">
+                        <img src="./assets/recommended-bundles/img-8.webp" alt="bundle" class="recommend-content__item-img">
+                    </div>
+                    <div class="recommend-content__text-container">
+                        <p class="recommend-content__text-container-title">NAC 600</p>
+                        <p class="recommend-content__text-container-subtitle">Supplements, Immune & Detox</p>
+                        <p class="recommend-content__text-container-price">$36.00</p>
+                    </div>
+                </div>`,
+                `<div class="recommend-content__item">
+                    <div class="recommend-content__img-container">
+                        <img src="./assets/recommended-bundles/img-9.webp" alt="bundle" class="recommend-content__item-img">
+                    </div>
+                    <div class="recommend-content__text-container">
+                        <p class="recommend-content__text-container-title">Focus & Clarity</p>
+                        <p class="recommend-content__text-container-subtitle">Supplements, Stress & Sleep</p>
+                        <p class="recommend-content__text-container-price">$52.00</p>
+                    </div>
+                </div>`,
+                `<div class="recommend-content__item">
+                    <div class="recommend-content__img-container">
+                        <img src="./assets/recommended-bundles/img-10.webp" alt="bundle" class="recommend-content__item-img">
+                    </div>
+                    <div class="recommend-content__text-container">
+                        <p class="recommend-content__text-container-title">Crave Control Complex</p>
+                        <p class="recommend-content__text-container-subtitle">Supplements, Gut & Metabolism</p>
+                        <p class="recommend-content__text-container-price">$34.00</p>
+                    </div>
+                </div>`,
+                `<div class="recommend-content__item">
+                    <div class="recommend-content__img-container">
+                        <img src="./assets/recommended-bundles/img-11.webp" alt="bundle" class="recommend-content__item-img">
+                    </div>
+                    <div class="recommend-content__text-container">
+                        <p class="recommend-content__text-container-title">Advanced Multi</p>
+                        <p class="recommend-content__text-container-subtitle">Supplements, Energy & Vitality</p>
+                        <p class="recommend-content__text-container-price">$44.00</p>
+                    </div>
+                </div>`,
+                `<div class="recommend-content__item">
+                    <div class="recommend-content__img-container">
+                        <img src="./assets/recommended-bundles/img-12.webp" alt="bundle" class="recommend-content__item-img">
+                    </div>
+                    <div class="recommend-content__text-container">
+                        <p class="recommend-content__text-container-title">Digestive Enzymes</p>
+                        <p class="recommend-content__text-container-subtitle">Supplements, Gut & Metabolism</p>
+                        <p class="recommend-content__text-container-price">$47.00</p>
+                    </div>
+                </div>`,
+                `<div class="recommend-content__item">
+                    <div class="recommend-content__img-container">
+                        <img src="./assets/recommended-bundles/img-13.webp" alt="bundle" class="recommend-content__item-img">
+                    </div>
+                    <div class="recommend-content__text-container">
+                        <p class="recommend-content__text-container-title">Stress Complex Pro</p>
+                        <p class="recommend-content__text-container-subtitle">Supplements, Stress & Sleep</p>
+                        <p class="recommend-content__text-container-price">$56.00</p>
+                    </div>
+                </div>`,
+                `<div class="recommend-content__item">
+                    <div class="recommend-content__img-container">
+                        <img src="./assets/recommended-bundles/img-14.webp" alt="bundle" class="recommend-content__item-img">
+                    </div>
+                    <div class="recommend-content__text-container">
+                        <p class="recommend-content__text-container-title">Sleep Complex</p>
+                        <p class="recommend-content__text-container-subtitle">Supplements, Stress & Sleep</p>
+                        <p class="recommend-content__text-container-price">$86.00</p>
+                    </div>
+                </div>`,
+                `<div class="recommend-content__item">
+                    <div class="recommend-content__img-container">
+                        <img src="./assets/recommended-bundles/img-15.webp" alt="bundle" class="recommend-content__item-img">
+                    </div>
+                    <div class="recommend-content__text-container">
+                        <p class="recommend-content__text-container-title">RecoverPro</p>
+                        <p class="recommend-content__text-container-subtitle">Supplements, Immune & Detox</p>
+                        <p class="recommend-content__text-container-price">$44.00</p>
+                    </div>
+                </div>`,
+                `<div class="recommend-content__item">
+                    <div class="recommend-content__img-container">
+                        <img src="./assets/recommended-bundles/img-16.webp" alt="bundle" class="recommend-content__item-img">
+                    </div>
+                    <div class="recommend-content__text-container">
+                        <p class="recommend-content__text-container-title">TriMag Max</p>
+                        <p class="recommend-content__text-container-subtitle">Supplements, Stress & Sleep</p>
+                        <p class="recommend-content__text-container-price">$39.00</p>
+                    </div>
+                </div>`,
+                `<div class="recommend-content__item">
+                    <div class="recommend-content__img-container">
+                        <img src="./assets/recommended-bundles/img-17.webp" alt="bundle" class="recommend-content__item-img">
+                    </div>
+                    <div class="recommend-content__text-container">
+                        <p class="recommend-content__text-container-title">Iron Bisglycinate</p>
+                        <p class="recommend-content__text-container-subtitle">Supplements, Energy & Vitality</p>
+                        <p class="recommend-content__text-container-price">$22.00</p>
+                    </div>
+                </div>`,
+                `<div class="recommend-content__item">
+                    <div class="recommend-content__img-container">
+                        <img src="./assets/recommended-bundles/img-18.webp" alt="bundle" class="recommend-content__item-img">
+                    </div>
+                    <div class="recommend-content__text-container">
+                        <p class="recommend-content__text-container-title">Krill Oil 1000</p>
+                        <p class="recommend-content__text-container-subtitle">Supplements, Energy & Vitality</p>
+                        <p class="recommend-content__text-container-price">$49.00</p>
+                    </div>
+                </div>`,
+                `<div class="recommend-content__item">
+                    <div class="recommend-content__img-container">
+                        <img src="./assets/recommended-bundles/img-19.webp" alt="bundle" class="recommend-content__item-img">
+                    </div>
+                    <div class="recommend-content__text-container">
+                        <p class="recommend-content__text-container-title">Immune Max</p>
+                        <p class="recommend-content__text-container-subtitle">Supplements, Immune & Detox</p>
+                        <p class="recommend-content__text-container-price">$49.99</p>
+                    </div>
+                </div>`,
+            ];
+
+            let currentIndex = 4;
+
+            toggleButton.addEventListener("click", () => {
+                if (toggleButton.textContent === "See more") {
+                    const itemsToShow = allItems.slice(currentIndex, currentIndex + 4);
+                    itemsToShow.forEach((item) => {
+                        recommendContainer.insertAdjacentHTML("beforeend", item);
+                    });
+                    currentIndex += 4;
+
+                    if (currentIndex >= allItems.length) {
+                        toggleButton.textContent = "Show less";
+                    }
+                } else {
+                    const items = recommendContainer.querySelectorAll(".recommend-content__item");
+                    items.forEach((item, index) => {
+                        if (index >= 4) item.remove();
+                    });
+                    currentIndex = 4;
+                    toggleButton.textContent = "See more";
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

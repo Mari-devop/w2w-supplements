@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="hp-content">
+        <div class="hp-content__text-container">
+            <h1 class="hp-content__title">High-Potency B Complex</h1>
+            <p class="hp-content__text">
+                B Complete delivers a synergistic complex of eight essential B vitamins in their most active forms. Each
+                capsule provides therapeutic levels of B vitamins, including B12 and folate (5-MTHF), supporting optimal
+                absorption and utilization.*
+            </p>
+            <p class="hp-content__text">
+                The formula features high-potency B vitamins, including B1 (2083% DV), B6 (2941% DV), and B12 (33,333%
+                DV), working together to support energy production at the cellular level. These bioactive forms promote
+                cognitive function and help maintain healthy nervous system function.*
+            </p>
+            <p class="hp-content__text">
+                Directions: Take one capsule daily or as recommended by your healthcare practitioner. For best results,
+                incorporate as part of a comprehensive wellness routine.
+            </p>
+        </div>
+    </section>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1B1D29;
+        }
+
+        .hp-content {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            background-image: url(./assets/high-protency/bg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 598px;
+            margin-bottom: 200px;
+        }
+
+        .hp-content__text-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 832px;
+            margin-left: 115px;
+        }
+
+        .hp-content__title {
+            color: #FFF;
+            font-family: "Roboto";
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 1000;
+            line-height: 35.2px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        .hp-content__text {
+            color: #FFF;
+            font-family: "Roboto";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%;
+            margin-bottom: 12px;
+        }
+
+        @media (max-width: 1530px) {
+            .hp-content {
+                height: 100%;
+            }
+
+            .hp-content__text-container {
+                width: 600px;
+            }
+
+            .hp-content__text {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 25.6px;
+            }
+        }
+
+        @media (max-width: 1400px) {
+            .hp-content {
+                min-height: 100%;
+            }
+
+            .hp-content__text-container {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hp-content {
+                background-image: url(./assets/high-protency/bg-mob.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                min-height: 1000px;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-bottom: 100px;
+            }
+
+
+        }
+    </style>
+</body>
+
+</html>
