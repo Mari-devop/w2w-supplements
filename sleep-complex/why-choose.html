@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="choose-content">
+        <h2 class="choose-content__title">Transform Your Well-Being</h2>
+        <p class="choose-content__text">
+            Unlock Restful Nights and Radiant Days with Natural Support
+        </p>
+        <div class="choose-content__container">
+            <div class="choose-content__container-item" data-id="1">
+                <img src="./assets/why-choose/img-1.webp" alt="why-choose-1" class="choose-content__container-img">
+                <p class="choose-content__container-item-text">
+                    Improved Sleep Quality*
+                </p>
+            </div>
+            <div class="choose-content__container-item" data-id="2">
+                <img src="./assets/why-choose/img-2.webp" alt="why-choose-1" class="choose-content__container-img">
+                <p class="choose-content__container-item-text">
+                    Natural Relaxation*
+                </p>
+            </div>
+            <div class="choose-content__container-item" data-id="3">
+                <img src="./assets/why-choose/img-3.webp" alt="why-choose-1" class="choose-content__container-img">
+                <p class="choose-content__container-item-text">
+                    Supports Healthy Sleep Cycles*
+                </p>
+            </div>
+            <div class="choose-content__container-item" data-id="4">
+                <img src="./assets/why-choose/img-4.webp" alt="why-choose-1" class="choose-content__container-img">
+                <p class="choose-content__container-item-text">
+                    Reduces insomnia*
+                </p>
+            </div>
+        </div>
+    </section>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1B1D29;
+        }
+
+        .choose-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 13.781px 116px 14.219px 115px;
+            margin-bottom: 200px;
+            margin-top: 200px;
+        }
+
+        .choose-content__title {
+            color: #34B4F4;
+            font-family: "Roboto";
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 1000;
+            line-height: 35.2px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        .choose-content__text {
+            color: #FFF;
+            font-family: "Roboto";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%;
+            margin-top: 0;
+            margin-bottom: 42px;
+        }
+
+        .choose-content__container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            width: 100%;
+            gap: 20px;
+            box-sizing: border-box;
+        }
+
+        .choose-content__container-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 407px;
+            height: 190px;
+            padding: 35px 20px;
+            gap: 20px;
+            border-radius: 8px;
+            background-image: url(./assets/why-choose/bg.webp);
+            background-size: cover;
+            background-position: center;
+            box-sizing: border-box;
+        }
+
+        .choose-content__container-item:hover {
+            background-image: none;
+            background: #0D0F15;
+            cursor: pointer;
+            padding: 20px;
+            transition: padding 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .choose-content__container-item-text {
+            color: #FFF;
+            font-family: "Roboto";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 1000;
+            line-height: 130%;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            width: 180px;
+        }
+
+        .choose-content__container-img {
+            width: 100px;
+            height: 100px;
+            flex-shrink: 0;
+        }
+
+        .choose-content__container-item-title {
+            color: #FFF;
+            font-family: "Roboto";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 1000;
+            line-height: 130%;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .choose-content__container-item-hover {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: left;
+            gap: 8px;
+            max-width: 330px;
+        }
+
+        .choose-content__container-item-text-hover {
+            color: #FFF;
+            font-family: "Roboto";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25.6px;
+            margin: 0;
+        }
+
+        .choose-content__container-item-hover-svg {
+            display: flex;
+            margin-top: 2px;
+            margin-bottom: auto;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 20px;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 1550px) {
+            .choose-content {
+                padding: 13.781px 50px 14.219px 50px;
+            }
+
+            .wrapper {
+                gap: 12px;
+            }
+
+            .choose-content__container-item {
+                height: 210px;
+            }
+        }
+
+        @media screen and (max-width: 1400px) {
+            .choose-content {
+                padding: 13.781px 20px 14.219px 20px;
+            }
+        }
+
+        @media screen and (max-width: 1340px) {
+            .choose-content__container {
+                grid-template-columns: repeat(2, 1fr);
+                justify-items: flex-start;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            .choose-content {
+                padding: 0 16px;
+                margin-top: 100px;
+                margin-bottom: 100px;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .choose-content__container {
+                grid-template-columns: repeat(1, 1fr);
+                justify-items: center;
+            }
+
+            .choose-content__container-item:hover {
+                padding: 20px 10px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .choose-content__text {
+                font-size: 16px;
+                margin-bottom: 32px;
+            }
+        }
+
+        @media screen and (max-width: 415px) {
+            .choose-content__container-item {
+                max-width: 343px;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const containerItems = document.querySelectorAll(".choose-content__container-item");
+
+            const hoverContent = {
+                1: {
+                    title: 'Improved Sleep Quality*',
+                    text: "Promotes deeper, more restful sleep for better recovery.*"
+                },
+                2: {
+                    title: 'Natural Relaxation*',
+                    text: "Helps the body wind down and prepare for restful sleep.*"
+                },
+                3: {
+                    title: 'Supports Healthy Sleep Cycles*',
+                    text: "Enhances regular sleep patterns for consistent rest.*"
+                },
+                4: {
+                    title: 'Reduces insomnia*',
+                    text: "Helps alleviate occasional sleeplessness and promotes relaxation.*"
+                }
+            };
+
+            const defaultContent = {
+                1: {
+                    img: "./assets/why-choose/img-1.webp",
+                    text: "Improved Sleep Quality*"
+                },
+                2: {
+                    img: "./assets/why-choose/img-2.webp",
+                    text: "Natural Relaxation*"
+                },
+                3: {
+                    img: "./assets/why-choose/img-3.webp",
+                    text: "Supports Healthy Sleep Cycles*"
+                },
+                4: {
+                    img: "./assets/why-choose/img-4.webp",
+                    text: "Reduces insomnia*"
+                }
+            };
+
+            containerItems.forEach((item) => {
+                const id = item.getAttribute("data-id");
+
+                item.addEventListener("mouseenter", () => {
+                    item.innerHTML = `
+                    <div class="wrapper">
+                    <div class="choose-content__container-item-hover-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="21" viewBox="0 0 25 21" fill="none">
+                        <path d="M22.0634 1.13801C22.6595 0.436665 23.7114 0.351381 24.4127 0.947525C25.1141 1.54367 25.1993 2.59549 24.6032 3.29684L10.4365 19.9635C9.83103 20.6759 8.75813 20.7509 8.05936 20.1298L0.559361 13.4631C-0.128611 12.8516 -0.190578 11.7981 0.42095 11.1101C1.03248 10.4222 2.08594 10.3602 2.77391 10.9717L9.00032 16.5063L22.0634 1.13801Z" fill="#34B4F4"/>
+                        </svg>
+                    </div>
+                    <div class="choose-content__container-item-hover">
+                        <h2 class="choose-content__container-item-title">${hoverContent[id].title}</h2>
+                        <p class="choose-content__container-item-text-hover">${hoverContent[id].text}</p>
+                    </div>
+                    </div>
+                    `;
+                });
+
+
+                item.addEventListener("mouseleave", () => {
+                    item.innerHTML = `
+                    <img src="${defaultContent[id].img}" alt="original-image" class="choose-content__container-img">
+                    <p class="choose-content__container-item-text">${defaultContent[id].text}</p>`;
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

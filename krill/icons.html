@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="icons-content">
+        <div class="icons-content__item">
+            <img src="./assets/icons/img-1.webp" alt="icon" class="icons-content__item-img">
+            <p class="icons-content__item-text">CGMP-certified</p>
+        </div>
+        <div class="icons-content__item">
+            <img src="./assets/icons/img-2.webp" alt="icon" class="icons-content__item-img">
+            <p class="icons-content__item-text">3rd Party Tested</p>
+        </div>
+        <div class="icons-content__item">
+            <img src="./assets/icons/img-3.webp" alt="icon" class="icons-content__item-img">
+            <p class="icons-content__item-text">Sustainable sourcing</p>
+        </div>
+        <div class="icons-content__item">
+            <img src="./assets/icons/img-4.webp" alt="icon" class="icons-content__item-img">
+            <p class="icons-content__item-text">Pure Antarctic krill oil</p>
+        </div>
+        <div class="icons-content__item">
+            <img src="./assets/icons/img-5.webp" alt="icon" class="icons-content__item-img">
+            <p class="icons-content__item-text">Made in the USA</p>
+        </div>
+    </section>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1B1D29;
+        }
+
+        .icons-content {
+            display: grid;
+            grid-template-columns: repeat(5, auto);
+            padding-left: 418px;
+            padding-right: 418px;
+            margin-bottom: 200px;
+            gap: 96px;
+            justify-items: center;
+            justify-content: initial;
+            margin-top: 200px;
+            box-sizing: border-box;
+        }
+
+        .icons-content__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
+            max-width: 155px;
+            flex-shrink: 0;
+            box-sizing: border-box;
+        }
+
+        .icons-content__item-img {
+            width: 91px;
+            height: 91px;
+            flex-shrink: 0;
+            transition: all 0.3s;
+        }
+
+
+        .icons-content__item-text {
+            color: rgba(255, 255, 255, 0.80);
+            font-family: "Roboto";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 25.6px;
+            text-transform: uppercase;
+            text-align: center;
+            /* white-space: nowrap; */
+            margin-top: 0;
+            margin-bottom: 0;
+            max-width: 155px;
+        }
+
+        @media (max-width: 1800px) {
+            .icons-content {
+                padding-left: 200px;
+                padding-right: 200px;
+            }
+        }
+
+        @media (max-width: 1530px) {
+            .icons-content {
+                grid-template-columns: repeat(3, 1fr);
+                grid-auto-rows: auto;
+                justify-items: center;
+            }
+
+            .icons-content__item:nth-child(1),
+            .icons-content__item:nth-child(2),
+            .icons-content__item:nth-child(3) {
+                grid-row: 1;
+            }
+
+            .icons-content__item:nth-child(4) {
+                grid-column: 1 / 3;
+                grid-row: 2;
+            }
+
+            .icons-content__item:nth-child(5) {
+                grid-column: 2 / 4;
+                grid-row: 2;
+            }
+        }
+
+        @media (max-width: 1100px) {
+            .icons-content {
+                padding-left: 26px;
+                padding-right: 26px;
+                gap: 42px;
+                row-gap: 32px;
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .icons-content__item:nth-child(1),
+            .icons-content__item:nth-child(2),
+            .icons-content__item:nth-child(3) {
+                grid-row: 1;
+                grid-column: auto;
+            }
+
+            .icons-content__item:nth-child(4),
+            .icons-content__item:nth-child(5) {
+                grid-row: 2;
+                grid-column: auto;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .icons-content {
+                margin-top: 100px;
+                margin-bottom: 100px;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .icons-content__item:nth-child(1),
+            .icons-content__item:nth-child(2) {
+                grid-row: 1;
+                grid-column: auto;
+            }
+
+            .icons-content__item:nth-child(3),
+            .icons-content__item:nth-child(4) {
+                grid-row: 2;
+                grid-column: auto;
+            }
+
+            .icons-content__item:nth-child(5) {
+                grid-row: 3;
+                grid-column: 1 / 3;
+            }
+        }
+    </style>
+</body>
+
+</html>
